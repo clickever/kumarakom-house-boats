@@ -130,9 +130,15 @@ input, select {
 }
 
 .header-actions {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .header-actions {
+    display: flex;
+  }
 }
 
 .btn-header-call {
