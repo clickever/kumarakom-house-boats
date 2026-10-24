@@ -766,3 +766,318 @@ input, select {
   color: var(--color-text-muted);
   margin-top: 4px;
 }
+
+/* ==========================================================================
+   The Route Section (Dark Card)
+   ========================================================================== */
+.route-section {
+  padding: 20px 0 30px;
+}
+
+.route-card {
+  background: #0f2e3d;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 38px 40px 34px;
+  box-shadow: 0 10px 30px rgba(15, 46, 61, 0.15);
+}
+
+@media (max-width: 640px) {
+  .route-card {
+    padding: 26px 20px 24px;
+    border-radius: 16px;
+  }
+}
+
+.route-title {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: #FAF4E8;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.route-desc {
+  font-size: 0.95rem;
+  color: #C2D3CD;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.route-stops {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.route-stop-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #F1F5F3;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+}
+
+.route-stop-pill svg {
+  flex-shrink: 0;
+}
+
+.route-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #D99C3D;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.route-link:hover {
+  color: #F3BC65;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   What Every Cruise Includes (5 Feature Boxes)
+   ========================================================================== */
+.cruise-inclusions-section {
+  padding: 20px 0 30px;
+}
+
+.inclusions-overview-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 20px;
+  padding: 38px 32px 34px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+@media (max-width: 640px) {
+  .inclusions-overview-card {
+    padding: 26px 18px 22px;
+    border-radius: 16px;
+  }
+}
+
+.inclusions-overview-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.overview-features-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 992px) {
+  .overview-features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .overview-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+.overview-feature-box {
+  background: #FAF8F4;
+  border: 1px solid #EFE8DC;
+  border-radius: 12px;
+  padding: 22px 12px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  transition: var(--transition);
+}
+
+.overview-feature-box:hover {
+  transform: translateY(-2px);
+  border-color: #DFD3C0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.overview-feature-icon {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview-feature-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1C2421;
+  line-height: 1.25;
+}
+
+.overview-feature-sub {
+  font-size: 0.76rem;
+  color: #6B7280;
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   What Guests Say Section
+   ========================================================================== */
+.guests-say-section {
+  padding: 40px 0 50px;
+  text-align: center;
+}
+
+.guests-say-title {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.guests-say-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: 0 auto 22px;
+  line-height: 1.55;
+}
+
+.btn-google-reviews {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid #D4A359;
+  background: #FFFDF9;
+  color: #7A531C;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-google-reviews:hover {
+  background: #F8EFE0;
+  border-color: #B58434;
+  color: #583A0E;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   Where to Board Section (Map & Directions)
+   ========================================================================== */
+.boarding-section {
+  padding: 10px 0 50px;
+}
+
+.boarding-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.boarding-title {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #0f2e3d;
+}
+
+.boarding-map-wrap {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  background: #F3F4F6;
+  line-height: 0;
+}
+
+.boarding-map-iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .boarding-map-iframe {
+    height: 260px;
+  }
+}
+
+.boarding-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 18px;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: #0f2e3d;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-directions svg {
+  color: #FBBF24;
+}
+
+.btn-directions:hover {
+  background: #184357;
+  transform: translateY(-1px);
+}
+
+.btn-google-map {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 18px;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #92400E;
+  background: #FFFBEB;
+  border: 1px solid #FCD34D;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-google-map:hover {
+  background: #FEF3C7;
+  border-color: #F59E0B;
+  color: #78350F;
+  transform: translateY(-1px);
+}
+
+.boarding-note {
+  font-size: 0.82rem;
+  color: #6B7280;
+  line-height: 1.55;
+}
+
