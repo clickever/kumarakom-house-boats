@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kumarakom Houseboats — Book Private Houseboat Cruises on Vembanad Lake</title>
-  <meta name="description" content="Book licensed private kettuvallam houseboats from Cheeppunkal, Kumarakom. 1 to 4 BHK houseboats with chef, full board meals, and quiet lake moorings.">
+  <title>Kumarakom Houseboat Booking | Rates, Day Cruise &amp; Overnight Stay</title>
+  <meta name="description" content="Book private houseboats in Kumarakom. 1–4 BHK options available for day cruise (11 AM–4 PM) and overnight stays. Chef and all meals included. Get an instant quote on WhatsApp.">
   <meta name="theme-color" content="#0F3D2E">
 
   <!-- OpenGraph -->
-  <meta property="og:title" content="Kumarakom Houseboats — Private Houseboat Cruises">
-  <meta property="og:description" content="Private houseboats on Vembanad Lake, Kumarakom. Licensed boats, onboard chef, full board included.">
-  <meta property="og:image" content="assets/images/houseboat-kumarakom-hero.jpg">
+  <meta property="og:title" content="Kumarakom Houseboat Booking | Rates, Day Cruise &amp; Overnight Stay">
+  <meta property="og:description" content="Book private houseboats in Kumarakom. 1–4 BHK options available for day cruise (11 AM–4 PM) and overnight stays. Chef and all meals included. Get an instant quote on WhatsApp.">
+  <meta property="og:image" content="assets/images/hero-bg.jpg">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are houseboat rates in Kumarakom?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Houseboat rates vary depending on the category (1 BHK to 4 BHK), season, and whether you choose a day cruise or an overnight stay. Contact us on WhatsApp or submit a request to get the best customized rates for your travel dates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make a house boat booking in Kumarakom?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fill in the quote form or message us on WhatsApp. You’ll get availability and a quote in 15–30 minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the timings for an overnight stay vs a day trip cruise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Check-in for overnight cruises is at 12:00 PM noon with check-out at 09:30 AM the next morning. A day trip cruise runs from 11:00 AM to 04:00 PM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many people can stay on each boat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1 BHK: Up to 4 guests (including children)\n2 BHK: Up to 8 guests (including children)\n3 BHK: Up to 12 guests (including children)\n4 BHK: 16+ guests (including children)"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there any extra charges?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fuel, captain, chef, and 4 meals are included in your package. Additional charges may only apply for extra guests beyond capacity or specific extra requests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is the boarding point for the house boat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Boarding is at Cheeppunkal Jetty (Near St. Antony's Church, under Cheeppunkal Bridge, Kumarakom 686563). Free secure parking is available for guest cars."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -52,16 +110,16 @@
   <!-- Hero with Simple Lead Form -->
   <section class="hero" id="lead-section">
     <div class="hero-bg">
-      <img src="assets/images/houseboat-kumarakom-hero.jpg" alt="Houseboat in Kumarakom backwaters" fetchpriority="high">
+      <img src="assets/images/hero-bg.jpg" alt="Houseboat in Kumarakom backwaters" fetchpriority="high">
     </div>
 
     <div class="container hero-content-wrap">
       <!-- Left: Value Prop -->
       <div>
         <span class="hero-badge">Kerala Maritime Board Licensed</span>
-        <h1 class="hero-title">Private Houseboat Cruises in <span>Kumarakom</span></h1>
+        <h1 class="hero-title">Book a Private Houseboat in <span>Kumarakom</span></h1>
         <p class="hero-desc">
-          Relax on Vembanad Lake in complete privacy. Licensed kettuvallams, private chef on board, full board dining, and tranquil moorings.
+          Enjoy transparent rates and easy booking for your private house boat on Vembanad Lake, whether you choose a scenic day cruise or a relaxing overnight stay.
         </p>
 
         <div class="hero-points">
@@ -104,30 +162,32 @@
             <input type="tel" id="guest-phone" name="phone" class="input-field" placeholder="+91 98765 43210" required>
           </div>
 
-          <div class="input-group">
-            <label for="travel-date" class="input-label">Travel Date</label>
-            <input type="date" id="travel-date" name="travel_date" class="input-field">
+          <div class="form-row">
+            <div class="input-group">
+              <label for="travel-date" class="input-label">Travel Date</label>
+              <input type="date" id="travel-date" name="travel_date" class="input-field">
+            </div>
+
+            <div class="input-group">
+              <label for="guest-count" class="input-label">Number of Guests</label>
+              <select id="guest-count" name="guests" class="input-field">
+                <option value="1–2 Guests">1–2 Guests</option>
+                <option value="3–4 Guests">3–4 Guests</option>
+                <option value="5–6 Guests">5–6 Guests</option>
+                <option value="7–10 Guests">7–10 Guests</option>
+                <option value="10+ Guests">10+ Guests</option>
+              </select>
+            </div>
           </div>
 
           <div class="input-group">
-            <label for="boat-choice" class="input-label">Preferred Boat</label>
+            <label for="boat-choice" class="input-label">Preferred Accommodation</label>
             <select id="boat-choice" name="boat" class="input-field">
-              <option value="1 BHK (Couples / 2–4 Guests)">1 BHK (Couples / 2–4 Guests)</option>
-              <option value="2 BHK (Families / Up to 8)">2 BHK (Families / Up to 8)</option>
-              <option value="3 BHK (Groups / Up to 12)">3 BHK (Groups / Up to 12)</option>
-              <option value="4 BHK (Large Groups / Up to 16)">4 BHK (Large Groups / Up to 16)</option>
-              <option value="Day Cruise (11 AM – 4 PM)">Day Cruise (11 AM to 4 PM with Lunch)</option>
-            </select>
-          </div>
-
-          <div class="input-group">
-            <label for="guest-count" class="input-label">Number of Guests</label>
-            <select id="guest-count" name="guests" class="input-field">
-              <option value="2 Adults">2 Adults</option>
-              <option value="3–4 Adults">3–4 Adults</option>
-              <option value="5–6 Adults">5–6 Adults</option>
-              <option value="7–10 Adults">7–10 Adults</option>
-              <option value="10+ Adults">10+ Adults</option>
+              <option value="1 BHK (1 Bedroom)">1 BHK (1 Bedroom)</option>
+              <option value="2 BHK (2 Bedrooms)">2 BHK (2 Bedrooms)</option>
+              <option value="3 BHK (3 Bedrooms)">3 BHK (3 Bedrooms)</option>
+              <option value="4 BHK (4 Bedrooms)">4 BHK (4 Bedrooms)</option>
+              <option value="Day Cruise (11 AM – 4 PM)">Day Cruise (11 AM to 4 PM)</option>
             </select>
           </div>
 
@@ -177,22 +237,18 @@
         <!-- 1 BHK -->
         <div class="card">
           <div class="card-img">
-            <img src="assets/images/houseboat-palm-canal.jpg" alt="1 BHK Houseboat" loading="lazy">
+            <img src="assets/images/1-bhk-houseboat.jpg" alt="1 BHK Houseboat" loading="lazy">
             <span class="card-badge">1 BHK</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">Premium 1 BHK</h3>
-            <p class="card-desc">1 AC Bedroom • Ideal for couples & small families</p>
+            <p class="card-desc">1 AC Bedroom • Private deck & dining lounge</p>
             <ul class="card-features">
-              <li>Up to 4 guests</li>
+              <li>1 Private AC Bedroom with attached bath</li>
               <li>AC 7:00 PM to 6:00 AM</li>
               <li>Private chef & all meals</li>
             </ul>
-            <div class="card-price-box">
-              <span class="card-price-label">Per night, full board</span>
-              <span class="card-price">₹11,000</span>
-            </div>
-            <button type="button" class="btn-select" onclick="openLeadModal('Premium 1 BHK', '1 BHK', '2 Adults')">
+            <button type="button" class="btn-select" onclick="openLeadModal('Premium 1 BHK', '1 BHK', '1–2 Guests')">
               Select 1 BHK
             </button>
           </div>
@@ -201,22 +257,18 @@
         <!-- 2 BHK -->
         <div class="card">
           <div class="card-img">
-            <img src="assets/images/houseboats-vembanad-fleet.jpg" alt="2 BHK Houseboat" loading="lazy">
+            <img src="assets/images/2-bhk-houseboat.jpg" alt="2 BHK Houseboat" loading="lazy">
             <span class="card-badge">2 BHK</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">Premium 2 BHK</h3>
-            <p class="card-desc">2 AC Bedrooms • Built for families & small groups</p>
+            <p class="card-desc">2 AC Bedrooms • Private deck & dining lounge</p>
             <ul class="card-features">
-              <li>Up to 8 guests</li>
+              <li>2 Private AC Bedrooms with attached baths</li>
               <li>AC 7:00 PM to 6:00 AM</li>
               <li>Private chef & all meals</li>
             </ul>
-            <div class="card-price-box">
-              <span class="card-price-label">Per night, full board</span>
-              <span class="card-price">₹15,000</span>
-            </div>
-            <button type="button" class="btn-select" onclick="openLeadModal('Premium 2 BHK', '2 BHK', '3–4 Adults')">
+            <button type="button" class="btn-select" onclick="openLeadModal('Premium 2 BHK', '2 BHK', '3–4 Guests')">
               Select 2 BHK
             </button>
           </div>
@@ -225,22 +277,18 @@
         <!-- 3 BHK -->
         <div class="card">
           <div class="card-img">
-            <img src="assets/images/houseboats-moored-kumarakom.jpg" alt="3 BHK Houseboat" loading="lazy">
+            <img src="assets/images/3-bhk-houseboat.jpg" alt="3 BHK Houseboat" loading="lazy">
             <span class="card-badge">3 BHK</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">Premium 3 BHK</h3>
-            <p class="card-desc">3 AC Bedrooms • Perfect for group get-togethers</p>
+            <p class="card-desc">3 AC Bedrooms • Spacious upper viewing deck</p>
             <ul class="card-features">
-              <li>Up to 12 guests</li>
+              <li>3 Private AC Bedrooms with attached baths</li>
               <li>AC 7:00 PM to 6:00 AM</li>
               <li>Private chef & all meals</li>
             </ul>
-            <div class="card-price-box">
-              <span class="card-price-label">Per night, full board</span>
-              <span class="card-price">₹21,500</span>
-            </div>
-            <button type="button" class="btn-select" onclick="openLeadModal('Premium 3 BHK', '3 BHK', '5–6 Adults')">
+            <button type="button" class="btn-select" onclick="openLeadModal('Premium 3 BHK', '3 BHK', '5–6 Guests')">
               Select 3 BHK
             </button>
           </div>
@@ -249,22 +297,18 @@
         <!-- 4 BHK -->
         <div class="card">
           <div class="card-img">
-            <img src="assets/images/houseboat-kumarakom-hero.jpg" alt="4 BHK Houseboat" loading="lazy">
+            <img src="assets/images/4-bhk-houseboat.jpg" alt="4 BHK Houseboat" loading="lazy">
             <span class="card-badge">4 BHK</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">Premium 4 BHK</h3>
-            <p class="card-desc">4 AC Bedrooms • Large families & reunions</p>
+            <p class="card-desc">4 AC Bedrooms • Spacious upper viewing deck</p>
             <ul class="card-features">
-              <li>Up to 16 guests</li>
+              <li>4 Private AC Bedrooms with attached baths</li>
               <li>AC 7:00 PM to 6:00 AM</li>
               <li>Private chef & all meals</li>
             </ul>
-            <div class="card-price-box">
-              <span class="card-price-label">Per night, full board</span>
-              <span class="card-price">₹29,000</span>
-            </div>
-            <button type="button" class="btn-select" onclick="openLeadModal('Premium 4 BHK', '4 BHK', '7–10 Adults')">
+            <button type="button" class="btn-select" onclick="openLeadModal('Premium 4 BHK', '4 BHK', '7–10 Guests')">
               Select 4 BHK
             </button>
           </div>
@@ -424,26 +468,47 @@
     </div>
   </section>
 
-  <!-- Simple FAQ -->
-  <section class="simple-section">
+  <!-- Frequently Asked Questions -->
+  <section class="simple-section" id="faq">
     <div class="container">
       <div class="section-head">
-        <h2>Quick FAQs</h2>
+        <h2>Frequently Asked Questions</h2>
       </div>
 
       <div class="simple-faq">
         <div class="faq-card">
-          <h4>What are the cruise timings?</h4>
-          <p>Check-in is at 12:00 PM noon and check-out is at 09:30 AM the next morning. Day cruises run from 11:00 AM to 04:00 PM.</p>
+          <h3>What are houseboat rates in Kumarakom?</h3>
+          <p>Houseboat rates vary depending on the category (1 BHK to 4 BHK), season, and whether you choose a day cruise or an overnight stay. Contact us on WhatsApp or submit a request to get the best customized rates for your travel dates.</p>
         </div>
 
         <div class="faq-card">
-          <h4>What is included in the price?</h4>
-          <p>Your full rate includes the entire private boat, fuel, captain, chef, and 4 meals (lunch, tea/snacks, dinner, breakfast). There are no hidden fees.</p>
+          <h3>How do I make a house boat booking in Kumarakom?</h3>
+          <p>Fill in the quote form or message us on WhatsApp. You’ll get availability and a quote in 15–30 minutes.</p>
         </div>
 
         <div class="faq-card">
-          <h4>Where is the boarding point?</h4>
+          <h3>What are the timings for an overnight stay vs a day trip cruise?</h3>
+          <p>Check-in for overnight cruises is at 12:00 PM noon with check-out at 09:30 AM the next morning. A day trip cruise runs from 11:00 AM to 04:00 PM.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>How many people can stay on each boat?</h3>
+          <p>Maximum occupancy per boat category:</p>
+          <ul>
+            <li><strong>1 BHK:</strong> Up to 4 guests (including children)</li>
+            <li><strong>2 BHK:</strong> Up to 8 guests (including children)</li>
+            <li><strong>3 BHK:</strong> Up to 12 guests (including children)</li>
+            <li><strong>4 BHK:</strong> 16+ guests (including children)</li>
+          </ul>
+        </div>
+
+        <div class="faq-card">
+          <h3>Are there any extra charges?</h3>
+          <p>Fuel, captain, chef, and 4 meals are included in your package. Additional charges may only apply for extra guests beyond capacity or specific extra requests.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3>Where is the boarding point for the house boat?</h3>
           <p>Boarding is at Cheeppunkal Jetty (Near St. Antony's Church, under Cheeppunkal Bridge, Kumarakom 686563). Free secure parking is available for guest cars.</p>
         </div>
       </div>
@@ -501,20 +566,22 @@
           <input type="tel" id="modal-guest-phone" name="phone" class="input-field" placeholder="+91 98765 43210" required>
         </div>
 
-        <div class="input-group">
-          <label for="modal-travel-date" class="input-label">Travel Date</label>
-          <input type="date" id="modal-travel-date" name="travel_date" class="input-field">
-        </div>
+        <div class="form-row">
+          <div class="input-group">
+            <label for="modal-travel-date" class="input-label">Travel Date</label>
+            <input type="date" id="modal-travel-date" name="travel_date" class="input-field">
+          </div>
 
-        <div class="input-group">
-          <label for="modal-guest-count" class="input-label">Number of Guests</label>
-          <select id="modal-guest-count" name="guests" class="input-field">
-            <option value="2 Adults">2 Adults</option>
-            <option value="3–4 Adults">3–4 Adults</option>
-            <option value="5–6 Adults">5–6 Adults</option>
-            <option value="7–10 Adults">7–10 Adults</option>
-            <option value="10+ Adults">10+ Adults</option>
-          </select>
+          <div class="input-group">
+            <label for="modal-guest-count" class="input-label">Number of Guests</label>
+            <select id="modal-guest-count" name="guests" class="input-field">
+              <option value="1–2 Guests">1–2 Guests</option>
+              <option value="3–4 Guests">3–4 Guests</option>
+              <option value="5–6 Guests">5–6 Guests</option>
+              <option value="7–10 Guests">7–10 Guests</option>
+              <option value="10+ Guests">10+ Guests</option>
+            </select>
+          </div>
         </div>
 
         <button type="submit" class="btn-submit">

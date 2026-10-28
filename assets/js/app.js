@@ -225,5 +225,5 @@ window.closeLeadModal = function() {
 
 // Quick boat selection fallback
 window.selectBoat = function(boatName) {
-  window.openLeadModal(boatName, boatName.split(' ')[0], '2 Adults');
+  window.openLeadModal(boatName, boatName.split(' ')[0], '1–2 Guests');
 };
