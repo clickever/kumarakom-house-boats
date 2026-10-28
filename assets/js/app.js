@@ -85,20 +85,15 @@ Please confirm availability and best price.`;
       // Dispatch to email in background
       await sendLeadToEmail({ name, phone, date, boat, guests });
 
-      // Open WhatsApp directly
-      const waUrl = `https://wa.me/919446821720?text=${encodeURIComponent(text)}`;
-      window.open(waUrl, '_blank');
-
-      // Visual feedback
-      if (submitBtn) {
-        submitBtn.innerHTML = '✓ Sent to Email & WhatsApp!';
-        submitBtn.style.background = '#10B981';
-        setTimeout(() => {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
-          submitBtn.style.background = '';
-        }, 4000);
-      }
+      // Redirect to success confirmation page
+      const params = new URLSearchParams({
+        name: name,
+        phone: phone,
+        date: date || 'Flexible',
+        boat: boat,
+        guests: guests
+      });
+      window.location.href = `success.html?${params.toString()}`;
     });
   }
 
@@ -133,42 +128,23 @@ Please confirm availability and best price.`;
       }
 
       const submitBtn = modalForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn ? submitBtn.innerHTML : '';
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.innerHTML = '⏳ Sending to hello@kumarakomhouseboats.com...';
       }
 
-      // Build WhatsApp message
-      const text = 
-`Hello Kumarakom Houseboats, I would like to check availability and get a quote:
-
-• Boat: ${boat}
-• Name: ${name}
-• Phone: ${phone}
-• Date: ${date || 'Flexible'}
-• Guests: ${guests}
-
-Please confirm availability and best price.`;
-
       // Dispatch to email in background
       await sendLeadToEmail({ name, phone, date, boat, guests });
 
-      // Open WhatsApp directly
-      const waUrl = `https://wa.me/919446821720?text=${encodeURIComponent(text)}`;
-      window.open(waUrl, '_blank');
-
-      // Visual feedback
-      if (submitBtn) {
-        submitBtn.innerHTML = '✓ Sent to Email & WhatsApp!';
-        submitBtn.style.background = '#10B981';
-        setTimeout(() => {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
-          submitBtn.style.background = '';
-          closeLeadModal();
-        }, 2000);
-      }
+      // Redirect to success confirmation page
+      const modalParams = new URLSearchParams({
+        name: name,
+        phone: phone,
+        date: date || 'Flexible',
+        boat: boat,
+        guests: guests
+      });
+      window.location.href = `success.html?${modalParams.toString()}`;
     });
   }
 
