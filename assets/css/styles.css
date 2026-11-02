@@ -778,6 +778,296 @@ input, select {
 }
 
 /* ==========================================================================
+   Day Cruise Section
+   ========================================================================== */
+.day-cruise-section {
+  padding: 10px 0 30px;
+}
+
+.day-cruise-card {
+  background: #0f2e3d;
+  color: #FFFFFF;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(180, 83, 9, 0.3);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 992px) {
+  .day-cruise-card {
+    grid-template-columns: 5fr 7fr;
+  }
+}
+
+.day-cruise-img-col {
+  position: relative;
+  min-height: 280px;
+  background: #1c1917;
+}
+
+.day-cruise-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.day-cruise-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #F59E0B;
+  color: #451A03;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.day-cruise-badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+.day-cruise-content {
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .day-cruise-content {
+    padding: 24px 20px;
+    gap: 18px;
+  }
+}
+
+.day-cruise-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.day-cruise-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #FBBF24;
+}
+
+.day-cruise-title {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #FEF3C7;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.day-cruise-timing {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #D1D5DB;
+  margin: 0;
+}
+
+.day-cruise-timing svg {
+  width: 16px;
+  height: 16px;
+  color: #FBBF24;
+  flex-shrink: 0;
+}
+
+.day-cruise-summary {
+  font-size: 0.88rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #E5E7EB;
+  margin: 0;
+}
+
+.day-cruise-inclusions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .day-cruise-inclusions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.day-cruise-inc-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 14px 14px 12px;
+}
+
+.day-cruise-inc-heading {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #FDE68A;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.day-cruise-inc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: #E5E7EB;
+}
+
+.day-cruise-inc-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.4;
+}
+
+.day-cruise-inc-list li svg {
+  width: 12px;
+  height: 12px;
+  color: #34D399;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.day-cruise-route {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #D1D5DB;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.day-cruise-route svg {
+  width: 16px;
+  height: 16px;
+  color: #FBBF24;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.day-cruise-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 4px;
+}
+
+@media (min-width: 640px) {
+  .day-cruise-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.day-cruise-price-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.day-cruise-price-label {
+  font-size: 0.75rem;
+  color: #9CA3AF;
+}
+
+.day-cruise-price-val {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FDE68A;
+}
+
+.day-cruise-price-guests {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #9CA3AF;
+  margin-left: 4px;
+}
+
+.day-cruise-price-note {
+  font-size: 0.75rem;
+  color: #9CA3AF;
+}
+
+.day-cruise-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-day-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: #047857;
+  color: #FFFFFF !important;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-day-wa:hover {
+  background: #065F46;
+  transform: translateY(-1px);
+}
+
+.btn-day-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #FEF3C7 !important;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-day-call:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
    The Route Section (Dark Card)
    ========================================================================== */
 .route-section {
