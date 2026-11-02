@@ -622,9 +622,49 @@ input, select {
 .footer {
   background: #082118;
   color: #9CA3AF;
-  padding: 40px 0 24px;
+  padding: 44px 0 28px;
   font-size: 0.85rem;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-bottom: 85px; /* Clear sticky mobile bar */
+  }
+}
+
+.footer-website-cta {
+  margin-bottom: 24px;
+}
+
+.btn-visit-website {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-gold);
+  color: #FFFFFF !important;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 14px rgba(200, 156, 74, 0.35);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-visit-website:hover {
+  background: var(--color-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200, 156, 74, 0.45);
+}
+
+.btn-visit-website svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn-visit-website:hover svg {
+  transform: translate(2px, -2px);
 }
 
 .footer-contact {
