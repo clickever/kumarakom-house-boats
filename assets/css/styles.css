@@ -1026,39 +1026,8 @@ input, select {
   .day-cruise-footer {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
-}
-
-.day-cruise-price-block {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.day-cruise-price-label {
-  font-size: 0.75rem;
-  color: #9CA3AF;
-}
-
-.day-cruise-price-val {
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #FDE68A;
-}
-
-.day-cruise-price-guests {
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: #9CA3AF;
-  margin-left: 4px;
-}
-
-.day-cruise-price-note {
-  font-size: 0.75rem;
-  color: #9CA3AF;
 }
 
 .day-cruise-actions {
@@ -1066,6 +1035,18 @@ input, select {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 639px) {
+  .day-cruise-actions {
+    width: 100%;
+  }
+
+  .day-cruise-actions .btn-day-wa,
+  .day-cruise-actions .btn-day-call {
+    flex: 1;
+    justify-content: center;
+  }
 }
 
 .btn-day-wa {
